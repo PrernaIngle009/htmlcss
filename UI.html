@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #main {
+            width: 100%;
+            height: 100px;
+            padding: 10px 20px;
+        }
+
+        #nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #nav1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #nav1 h3 {
+            border: 1px solid black;
+            padding: 5px 10px;
+            font-weight: 500;
+            border-radius: 50px;
+        }
+
+        #nav1 i {
+            border: 1px solid black;
+            padding: 5px 10px;
+            font-weight: 500;
+            border-radius: 50px;
+        }
+
+        #nav h1 {
+            font-weight: 500;
+            font-size: 22px;
+            text-transform: uppercase;
+        }
+
+        #nav2 {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        #nav2 i{
+            font-size: 25px;
+            color: white;
+            background-color: orangered;
+            padding: 5px;
+            border-radius: 50%;
+        }
+
+        #nav3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #nav3 button {
+            padding: 7px 12px;
+            border-radius: 15px;
+            border: 1px solid black;
+            font-size: 16px;
+            background-color: #fff;
+            font-weight: 600;
+        }
+
+        #nav3 #btn2 {
+            background-color: orangered;
+            color: #fff;
+            border: none;
+        }
+
+        #main>h1 {
+            font-size: 120px;
+            text-transform: uppercase;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            text-align: center;
+            letter-spacing: 10px;
+        }
+
+        img {
+            height: 380px;
+            width: 300px;
+            object-fit: cover;
+            object-position: top;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 15px;
+        }
+
+        #img1 {
+            transform: translate(-50%, -50%)rotate(-30deg);
+        }
+
+        #img2 {
+            transform: translate(-50%, -50%)rotate(-20deg);
+        }
+
+        #img3 {
+            transform: translate(-50%, -50%)rotate(-10deg);
+        }
+
+        #btmleft {
+            position: absolute;
+            bottom: 5%;
+            left: 3%;
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        #tech {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            bottom: 28%;
+            left: 41%;
+            z-index: 99;
+            gap: 2px;
+        }
+
+        #tech h2 {
+            font-size: 20px;
+            font-weight: 400;
+            background-color: white;
+            padding: 10px;
+            border-radius: 50px;
+        }
+
+        #tech i {
+            font-size: 20px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 50px;
+        }
+
+        #social {
+            position: absolute;
+            bottom: 5%;
+            right: 3%;
+            text-align: center;
+        }
+
+        #social h3 {
+            font-size: 15px;
+            margin-top: 10px;
+        }
+
+        #social i {
+            font-size: 28px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="nav">
+            <div id="nav1">
+                <h3>Menu</h3>
+                <i class="ri-menu-line"></i>
+            </div>
+            <div id="nav2">
+                <i class="ri-tooth-line"></i>
+                <h1>Dentytech</h1>
+            </div>
+            <div id="nav3">
+                <button>Log In</button>
+                <button id="btn2">Sign Up</button>
+            </div>
+        </div>
+        <h1>Our Advantages</h1>
+        <div id="tech">
+            <i class="ri-settings-2-line"></i>
+            <h2>Advanced Technology</h2>
+        </div>
+        <img id="img1"
+            src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="img">
+        <img id="img2"
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="img">
+        <img id="img3"
+            src="https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="img">
+        <img id="img4"
+            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="img">
+        <h5 id="btmleft">Your Smile,Our Passion</h5>
+        <div id="social">
+            <i class="ri-instagram-line"></i>
+            <i class="ri-youtube-line"></i>
+            <i class="ri-facebook-box-line"></i>
+            <h3>Best Shot up 2023</h3>
+        </div>
+    </div>
+</body>
+
+</html>
