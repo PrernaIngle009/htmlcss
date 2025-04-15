@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #3d697e;
+  font-family: Poppins;
+}
+.quote-box {
+  width: 50%;
+  max-width: 600px;
+  background-color: whitesmoke;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #8e7258;
+}
+#quote {
+  font-weight: 800;
+  color: #023a4d;
+}
+span {
+  float: right;
+  margin-top: 20px;
+  font-size: 18px;
+  position: relative;
+  font-weight: 600;
+  color: #023a4d;
+}
+span::before {
+  content: ""; /* REQUIRED */
+  display: inline-block;
+  width: 20px;
+  height: 4px;
+  background-color: #023a4d;
+  margin-right: 8px;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+.quotes {
+  margin-bottom: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.quotes #quote {
+  line-height: 1.2;
+  font-size: 30px;
+}
+.social {
+  border-top: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+.social ul {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.social ul li {
+  list-style: none;
+  font-size: 30px;
+  color: #023a4d;
+}
+.social button {
+  padding: 15px;
+  background-color: #023a4d;
+  border: none;
+  margin-top: 20px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+}
+.social button:hover {
+  background-color: lightblue;
+  color: #023a4d;
+  transition: 0.3s all linear;
+}
+
+/* More Container */
+
+.more-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.liked-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.blur {
+  filter: blur(5px);
+  pointer-events: none;
+}
+#close {
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 12px;
+  color: #fff;
+  background-color: #023a4d;
+  border: none;
+}
+
+@media (max-width: 540px) {
+  #quote {
+    font-size: 1.2rem;
+  }
+
+  #author {
+    font-size: 0.9rem;
+  }
+
+  .icon-row {
+    gap: 15px;
+    font-size: 1.2rem;
+  }
+
+  #more {
+    width: 95%;
+    padding: 15px;
+  }
+
+  #likedQuotes li {
+    font-size: 0.9rem;
+  }
+  .social ul li {
+    font-size: 24px;
+  }
+  .social ul {
+    display: none;
+  }
+  .social button {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}
